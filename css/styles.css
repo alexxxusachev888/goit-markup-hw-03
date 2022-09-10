@@ -24,6 +24,10 @@ body {
   color: var(--main-color);
   background-color: var(--background-color-white);
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -320,15 +324,15 @@ body {
 }
 .works__item {
   flex-basis: calc((100% - 2 * 30px) / 3);
-  border-bottom: 1px solid var(--card-bottom-border);
-  border-left: 1px solid var(--card-bottom-border);
-  border-right: 1px solid var(--card-bottom-border);
 }
 .works__image {
   max-width: 100%;
 }
 .works__inner {
   padding: 20px 24px;
+  border-bottom: 1px solid var(--card-bottom-border);
+  border-left: 1px solid var(--card-bottom-border);
+  border-right: 1px solid var(--card-bottom-border);
 }
 .works__title {
   margin-bottom: 4px;
