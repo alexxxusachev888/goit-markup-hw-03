@@ -56,7 +56,6 @@ body {
 
 /* Header*/
 .header {
-  padding: 24px 0 25px 0;
   border-bottom: 1px solid var(--header-bottom-border);
 }
 .header .container {
@@ -74,7 +73,7 @@ body {
   display: inline;
   color: var(--second-color);
 }
-.header__navigation,
+.header__navigation-list,
 .header__contacts {
   display: flex;
   gap: 50px;
@@ -83,6 +82,9 @@ body {
   margin-left: 93px;
 }
 .header__navigation-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -95,7 +97,11 @@ body {
 .header__contacts {
   margin-left: auto;
 }
+
 .header__contacts-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -116,7 +122,10 @@ body {
   background-color: var(--background-color);
 }
 .hero__title {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.35;
@@ -207,11 +216,10 @@ body {
   display: flex;
   gap: 30px;
 }
-.team__image {
-  margin-bottom: 30px;
+.team__inner {
+  padding: 30px 62px;
 }
 .team__item {
-  padding-bottom: 30px;
   flex-basis: calc((100% - 4 * 30px)) / 4;
   background-color: var(--background-color-white);
   border-radius: 0px 0px 4px 4px;
@@ -308,14 +316,13 @@ body {
 .works {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  gap: 30px;
 }
 .works__item {
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 3);
+  flex-basis: calc((100% - 2 * 30px) / 3);
   border-bottom: 1px solid var(--card-bottom-border);
+  border-left: 1px solid var(--card-bottom-border);
+  border-right: 1px solid var(--card-bottom-border);
 }
 .works__image {
   max-width: 100%;
